@@ -28,19 +28,18 @@ def check_greater():
     """ Add your docstring """
     a=int(input("Give me the first number: "))
     b=int(input("Give me the second number: "))
-    while a>b or b<a:
+    while a == b:
+        print("Try again")
+        a=int(input("Give me the first number: "))
+        b=int(input("Give me the second number: "))
         if a > b:
             print("First is Greater")
             break
         elif b > a:
             print("Second is Greater")
             break
-        else:
-            print("Try again")
-            a=int(input("Give me the first number: "))
-            b=int(input("Give me the second number: "))
 
-
+        
 # Task 3
 def get_special_numbers():
     """ Add your docstring """
