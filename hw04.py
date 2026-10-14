@@ -10,35 +10,35 @@ secret_word = "food"
 # Task 1
 def check_text():
     """ Add your docstring """
-#     my_answer = input("Give me a sentence: ")
-#     while "dog" not in my_answer or secret_word not in my_answer:
-#         if "dog" in my_answer:
-#             print("You used the word \"dog\" or the word \"Dog\"!")
-#             break
-#         elif secret_word in my_answer:
-#             print("You used the secret word!")
-#             break
-#         else:
-#             print("Try again")
-#             my_answer = input("Give me a sentence: ")
+    my_answer = input("Give me a sentence: ")
+    while "dog" not in my_answer or secret_word not in my_answer:
+        if "dog" in my_answer:
+            print("You used the word \"dog\" or the word \"Dog\"!")
+            break
+        elif secret_word in my_answer:
+            print("You used the secret word!")
+            break
+        else:
+            print("Try again")
+            my_answer = input("Give me a sentence: ")
             
     
 # Task 2
 def check_greater():
     """ Add your docstring """
-#     a=int(input("Give me the first number: "))
-#     b=int(input("Give me the second number: "))
-#     while a>b or b<a:
-#         if a > b:
-#             print("First is Greater")
-#             break
-#         elif b > a:
-#             print("Second is Greater")
-#             break
-#         else:
-#             print("Try again")
-#             a=int(input("Give me the first number: "))
-#             b=int(input("Give me the second number: "))
+    a=int(input("Give me the first number: "))
+    b=int(input("Give me the second number: "))
+    while a>b or b<a:
+        if a > b:
+            print("First is Greater")
+            break
+        elif b > a:
+            print("Second is Greater")
+            break
+        else:
+            print("Try again")
+            a=int(input("Give me the first number: "))
+            b=int(input("Give me the second number: "))
 
 
 # Task 3
