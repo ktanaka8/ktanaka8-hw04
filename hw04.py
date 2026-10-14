@@ -1,5 +1,5 @@
 # ------------------------------------------------------
-#        Name: (put your name here)
+#        Name: Kathryn Tanaka
 #       Peers: (add any collaborators)
 #  References: (anything you checked to solve this)
 # ------------------------------------------------------
@@ -10,21 +10,44 @@ secret_word = "food"
 # Task 1
 def check_text():
     """ Add your docstring """
-    pass
-
-
-
+#     my_answer = input("Give me a sentence: ")
+#     while "dog" not in my_answer or secret_word not in my_answer:
+#         if "dog" in my_answer:
+#             print("You used the word \"dog\" or the word \"Dog\"!")
+#             break
+#         elif secret_word in my_answer:
+#             print("You used the secret word!")
+#             break
+#         else:
+#             print("Try again")
+#             my_answer = input("Give me a sentence: ")
+            
+    
 # Task 2
 def check_greater():
     """ Add your docstring """
-    pass
-
+#     a=int(input("Give me the first number: "))
+#     b=int(input("Give me the second number: "))
+#     while a>b or b<a:
+#         if a > b:
+#             print("First is Greater")
+#             break
+#         elif b > a:
+#             print("Second is Greater")
+#             break
+#         else:
+#             print("Try again")
+#             a=int(input("Give me the first number: "))
+#             b=int(input("Give me the second number: "))
 
 
 # Task 3
 def get_special_numbers():
     """ Add your docstring """
-    pass
+    for i in range(1, 41):
+        if (i %2 == 1) and (i %3 == 0) and (i %5 != 0):
+            print(i)
+            i+=1
 
 
 # Task 4.a
