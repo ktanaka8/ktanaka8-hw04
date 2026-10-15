@@ -51,12 +51,13 @@ def my_for_loop():
     """ Add your docstring """
     user_str = input("Give me a word: ")
     x=len(user_str)
-    if x in range(2,5):
+    if x in range(2,6):
         for index, letter in enumerate(user_str):
             if letter in ["a", "e", "i", "o", "u"]:
                 print(f"Letter {letter} is a vowel")
             else:
-                print(f"Letter {letter} is a consonant")        
+                print(f"Letter {letter} is a consonant")
+    return
 
 # Task 4.b
 def my_while_loop():
