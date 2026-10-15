@@ -57,7 +57,9 @@ def my_for_loop():
                 print(f"Letter {letter} is a vowel")
             else:
                 print(f"Letter {letter} is a consonant")
-    return
+    else:
+        print("bad word")
+        return
 
 # Task 4.b
 def my_while_loop():
