@@ -64,7 +64,17 @@ def my_for_loop():
 # Task 4.b
 def my_while_loop():
     """ Add your docstring """
-    pass
+    choice = input("Choose one option: a, b, or c: ")
+    if choice == "a":
+        choice = input("Choose one option: a, b, or c: ")
+    elif choice == "b":
+        print("Goodbye")
+        return
+    elif choice == "c":
+        return
+    else:
+        print("try again")
+        choice = input("Choose one option: a, b, or c: ")
 
 # ---------------------------------------
 # Do not modify anything below this line
