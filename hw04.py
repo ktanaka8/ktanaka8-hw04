@@ -54,9 +54,9 @@ def my_for_loop():
     if x in range(2,6) and (" " not in user_str):
         for index, letter in enumerate(user_str):
             if letter in ["a", "e", "i", "o", "u"]:
-                print(f"Letter {letter} is a vowel")
+                print(f"{letter} is a vowel")
             else:
-                print(f"Letter {letter} is a consonant")
+                print(f"{letter} is a consonant")
     else:
         print("bad word")
         return
