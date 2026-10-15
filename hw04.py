@@ -49,7 +49,14 @@ def get_special_numbers():
 # Task 4.a
 def my_for_loop():
     """ Add your docstring """
-    pass
+    user_str = input("Give me a word: ")
+    x=len(user_str)
+    if x in range(2,5):
+        for index, letter in enumerate(user_str):
+            if letter in ["a", "e", "i", "o", "u"]:
+                print(f"Letter {letter} is a vowel")
+            else:
+                print(f"Letter {letter} is a consonant")        
 
 # Task 4.b
 def my_while_loop():
