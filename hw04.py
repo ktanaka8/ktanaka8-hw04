@@ -15,7 +15,7 @@ def check_text():
             my_answer - user-input string
     """
     my_answer = input("Give me a sentence: ")
-    while "dog" not in my_answer or secret_word not in my_answer:
+    while "dog" not in my_answer or secret_word not in my_answer: #loops until "dog" or "food" is in my_answer
         if "dog" in my_answer:
             print("You used the word \"dog\" or the word \"Dog\"!")
             break
@@ -37,7 +37,7 @@ def check_greater():
     """
     a=int(input("Give me the first number: "))
     b=int(input("Give me the second number: "))
-    while a == b:
+    while a == b: #runs only if the user has entered the same number
         print("Try again")
         a=int(input("Give me the first number: "))
         b=int(input("Give me the second number: "))
@@ -53,9 +53,9 @@ def get_special_numbers():
 
     """
     for i in range(1, 41):
-        if (i %2 == 1) and (i %3 == 0) and (i %5 != 0):
+        if (i %2 == 1) and (i %3 == 0) and (i %5 != 0): #eliminates numbers not in the parameters
             print(i)
-            i+=1
+            i+=1 #advances counter
 
 
 # Task 4.a
@@ -69,13 +69,13 @@ def my_for_loop():
     """
     user_str = input("Give me a word: ")
     x=len(user_str)
-    if x in range(2,6) and (" " not in user_str):
+    if x in range(2,6) and (" " not in user_str): #checks that the word is within range and is only one word
         for index, letter in enumerate(user_str):
-            if letter in ["a", "e", "i", "o", "u"]:
+            if letter in ["a", "e", "i", "o", "u"]: #checks for vowels
                 print(f"{letter} is a vowel")
-            else:
+            else: #if not a vowel then print it's a constant
                 print(f"{letter} is a consonant")
-    else:
+    else: #if not within paramters, then prints bad word
         print("bad word")
         return
 
@@ -91,16 +91,16 @@ def my_while_loop():
     """
     choice = input("Choose one option: a, b, or c: ")
     while choice != "c":
-        if choice == "a":
+        if choice == "a": #if choice a, reprint the menu
             choice = input("Choose one option: a, b, or c: ")
-        elif choice == "b":
+        elif choice == "b": #if choice b, print goodby
             print("Goodbye")
             return
-        else:
+        else: #if not a, b, or c then print try again and reprint menu
             print("try again")
             choice = input("Choose one option: a, b, or c: ")
     if choice == "c":
-        exit()
+        exit() #immediately exit function
 
 # ---------------------------------------
 # Do not modify anything below this line
